@@ -1,0 +1,6 @@
+express
+axios
+dotenv
+@aws-sdk/client-polly
+body-parser
+https

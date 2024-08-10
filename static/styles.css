@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+#app {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.conversation {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    display: none; /* Hide initially */
+}
+
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.message.user {
+    background-color: #e0f7fa;
+    text-align: left;
+}
+
+.message.bot {
+    background-color: #ffecb3;
+    text-align: left;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* Round shape */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.start-button {
+    background-color: #ff4b5c;
+}
+
+.start-button:hover {
+    background-color: #ff1f3a;
+}
+
+.end-button {
+    background-color: #007bff;
+}
+
+.end-button:hover {
+    background-color: #0056b3;
+}
+
+.recording-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recording-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ff4b5c;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+}
+
+.recording-dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.recording-dot:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
