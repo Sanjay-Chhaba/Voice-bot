@@ -6,7 +6,7 @@ const WebSocket = require('ws');
 require('dotenv').config();
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 const pollyClient = new PollyClient({
   region: process.env.AWS_REGION,
