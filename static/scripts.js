@@ -14,7 +14,7 @@ function startConversation() {
     isConversationActive = true;
     console.log('Conversation started:', isConversationActive);
 
-    ws = new WebSocket('ws://localhost:3000');
+    ws = new WebSocket('ws://54.152.182.81');
 
     ws.onopen = () => {
         console.log('WebSocket connection established.');
